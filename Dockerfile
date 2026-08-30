@@ -19,9 +19,6 @@ COPY . .
 RUN npm run lint
 RUN npm run build
 
-ENV NODE_ENV=production
-RUN npm ci --omit=dev && npm cache clean --force
-
 
 FROM node:20-slim AS runner
 WORKDIR /usr/src/app
