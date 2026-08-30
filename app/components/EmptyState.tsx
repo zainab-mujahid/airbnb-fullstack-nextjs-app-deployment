@@ -11,7 +11,7 @@ interface EmptyStateProps {
 }
 
 const EmptyState: React.FC<EmptyStateProps> = ({
-	title = "No exact matches",
+	title = "No listings found",
 	subtitle = "Try adjusting your filter or browse all rentals",
 	showReset
 }) => {
